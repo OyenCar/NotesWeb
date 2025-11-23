@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World From Script</title>
+</head>
+<body>
+    <div>
+        <h1>Dasar JavaScript</h1>
+        <hr>
+        <script> document.write("<h3>Tipe Data:</h3>")</script>
+        
+        
+        <div class="td42">
+            <div class="td tdNumber">
+                <h2 class="type">
+                    Number
+                </h2>
+                <div class="value">
+                    <ul>
+                        <li>
+                            <h4>Hexadecimal  : 0xFF</h4>
+                            <p id="hexa" class="contoh">Contoh</p>
+                        </li>
+                        <li>
+                            <h4>Binary   : 0b10101</h4>
+                            <p id="bine" class="contoh">Contoh</p>
+                            
+                        </li>
+                        <li>
+                            <h4>Octal    : 0o10</h4>
+                            <p id="octa" class="contoh">Contoh</p>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            
+            <div class="td Logical">
+                <h2 class="type">
+                    NonNumber
+                </h2>
+                <div class="value">
+                    <ul>
+                        <li>
+                            <h4>Bool    : true/false</h4>
+                                <p id="bool" class="contoh">Contoh</p>
+                        </li>
+                        <li>
+                            <h4>String    : "Hello World"</h4>
+                                <p id="str" class="contoh">Contoh</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="Variabel">
+        <h3>Variabel:</h3>
+        <div class="value">
+            <ul class="ulVar">
+                <div>
+                    <li class="subVar">
+                        <p>Variable (var)</p> 
+                    </li>
+                    <p class="descVar">
+                        <b>var</b> memiliki scope <b>Global</b> atau <b>Function scope</b>.<br>
+                        Variabel ini mengalami <i class="b">hoisting</i> penuh dan dapat dideklarasikan ulang (<b>re-declared</b>), yang sering menyebabkan bug.
+                        Penggunaannya saat ini <b>tidak disarankan</b> dalam kode modern.
+                    </p>
+                </div>
+                <div>
+                    <li class="subVar">
+                        <p>let</p>
+                    </li>
+                    <p class="descVar">
+                        <b>let</b> memiliki scope <b>Block scope</b> <br>
+                        (hanya ada di dalam blok `{}`).
+                        Nilainya dapat diubah (<b>re-assigned</b>), tetapi tidak dapat dideklarasikan ulang di scope yang sama. Ini adalah pilihan yang baik untuk variabel yang nilainya akan berubah.
+                    </p>
+                </div>
+                <div>
+                    <li class="subVar">
+                        <p>constant (const)</p>
+                    </li>
+                    <p class="descVar">
+                        <b>const</b> juga memiliki <b>Block scope</b>.<br>
+                        Variabel ini harus diinisialisasi saat deklarasi dan nilainya <b>tidak dapat diubah</b> (baik). Pilihan ideal untuk nilai yang bersifat tetap (konstanta).
+                    </p>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="Variabel">
+        <h3>TypeDef</h3>
+        <div class="value">
+            <ul class="ulVar">
+                <div>
+                    <li class="subVar">
+                        <p>parseInt(parmeter)</p> 
+                    </li>
+                    <p class="descVar">
+                        <b>var</b> memiliki scope <b>Global</b> atau <b>Function scope</b>.<br>
+                        Variabel ini mengalami <i class="b">hoisting</i> penuh dan dapat dideklarasikan ulang (<b>re-declared</b>), yang sering menyebabkan bug.
+                        Penggunaannya saat ini <b>tidak disarankan</b> dalam kode modern.
+                    </p>
+                </div>
+                <div>
+                    <li class="subVar">
+                        <p>parseFloat(Parameter)</p>
+                    </li>
+                    <p class="descVar">
+                        <b>let</b> memiliki scope <b>Block scope</b> <br>
+                        (hanya ada di dalam blok `{}`).
+                        Nilainya dapat diubah (<b>re-assigned</b>), tetapi tidak dapat dideklarasikan ulang di scope yang sama. Ini adalah pilihan yang baik untuk variabel yang nilainya akan berubah.
+                    </p>
+                </div>
+                <div>
+                    <li class="subVar">
+                        <p>constant (const)</p>
+                    </li>
+                    <p class="descVar">
+                        <b>const</b> juga memiliki <b>Block scope</b>.<br>
+                        Variabel ini harus diinisialisasi saat deklarasi dan nilainya <b>tidak dapat diubah</b> (baik). Pilihan ideal untuk nilai yang bersifat tetap (konstanta).
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <hr>
+        <hr>
+    </div>
+
+    <script>
+        let a = true
+        let b = "1"
+        console.info()
+        document.writeln(!a == b)
+        // Stringz inzto Int
+
+    const VarStr = '1';
+    const VarInt = 1;
+    const sumVar = parseInt(VarStr) + VarInt;
+    document.writeln(`<p>Hasil = ${sumVar}</p>`)
+    </script>
+    <script src="1-Dasar.js"></script>
+</body>
+</html>
