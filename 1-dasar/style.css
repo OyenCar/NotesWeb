@@ -1,0 +1,77 @@
+h1{
+    font-weight: 100;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li h4{
+    padding: 10px;
+    border-radius: 15px;
+
+    background-color: #f4f4f4;
+    border-left: 3px solid #007bff; 
+}
+.td42{
+    display: flex;
+    width: auto;
+    overflow-x: scroll;
+}
+.td{
+    background-color:antiquewhite;
+    margin: 5px;
+    padding: 25px;
+}
+.value{
+    padding: 10px;
+    padding-right: 25px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+.type{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+.contoh{
+    background-color: rgb(232, 165, 165);
+    padding: 10px;
+    margin-right: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.kepala{
+    width: auto;
+}
+.subVar{
+    margin: 10px;
+    margin-left: 25px;
+    padding: 2px;
+    padding-left: 10px;
+    border-radius: 15px;
+
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    list-style-type: none;
+    border-left: 3px solid red;
+    color: #333;
+    background-color: beige;
+}
+
+.descVar {
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 20px;
+    border-left: 3px solid #007bff; /* Garis biru sebagai penanda deskripsi */
+    
+    line-height: 1.4;
+    color: #555;
+    background-color: #f4f4f4;
+}
+.ulVar{
+    display: flex;
+    overflow-x: scroll;
+}
